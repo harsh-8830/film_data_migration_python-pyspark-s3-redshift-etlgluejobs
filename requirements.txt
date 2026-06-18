@@ -1,0 +1,35 @@
+# ============================================================
+# Requirements — Sakila Data Migration & ETL Pipeline
+# ============================================================
+# Install with:
+#   pip install -r requirements.txt
+#
+# NOTE: PySpark requires a local Java runtime (Java 11/17/21).
+# Install OpenJDK separately, e.g.:
+#   sudo apt-get install openjdk-21-jdk
+# ============================================================
+
+# Distributed data processing (cleaning + star schema transforms)
+pyspark==3.5.1
+
+# AWS SDK — S3 read/write, Lambda triggers, Redshift staging
+boto3>=1.34.0
+botocore>=1.34.0
+
+# Tabular data handling (CSV parsing / inspection helpers)
+pandas>=2.0.0
+
+# ============================================================
+# AWS Glue runtime (NOT pip-installable from PyPI)
+# ============================================================
+# `glue_pyspark_clean.py` and `glue_snowflake_to_star.py` import
+# `awsglue` (GlueContext, getResolvedOptions, Job). This module
+# is only available:
+#   1. Inside an actual AWS Glue job environment, or
+#   2. Locally, via AWS's Glue local-development libraries:
+#      https://github.com/awslabs/aws-glue-libs
+#
+# It is intentionally excluded from this file — running the
+# scripts outside of Glue requires either swapping that import
+# for a plain SparkSession (see the local runner scripts in
+# this repo) or setting up aws-glue-libs per AWS's instructions.

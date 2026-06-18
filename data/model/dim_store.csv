@@ -1,0 +1,3 @@
+store_id,manager_first_name,manager_last_name,store_address,store_city,store_country,last_update
+1,Mike,Hillyer,47 MySakila Drive,Lethbridge,Canada,2006-02-15T04:57:12.000Z
+2,Jon,Stephens,28 MySQL Boulevard,Woodridge,Australia,2006-02-15T04:57:12.000Z
