@@ -1,5 +1,5 @@
 # ============================================================
-# Requirements — Sakila Data Migration & ETL Pipeline
+# Requirements — Film Data Migration & ETL Pipeline
 # ============================================================
 # Install with:
 #   pip install -r requirements.txt
