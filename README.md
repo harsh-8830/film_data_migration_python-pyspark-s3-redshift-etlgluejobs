@@ -93,7 +93,7 @@ The pipeline is built and tested against the **Film** sample database (a MySQL r
 
 The pipeline follows a classic **raw → clean → warehouse** lakehouse pattern, fully automated through S3 events and Lambda triggers:
 
-![Data Migration Pipeline](architecture/data_migration_pipeline.jpeg)
+![Data Migration Pipeline](architecture/architecture.jpeg)
 
 **Flow summary:**
 
